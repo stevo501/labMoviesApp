@@ -60,9 +60,9 @@ const MovieDetails: React.FC<MovieDetailsProps> = (movie) => {
                 <li>
                     <Chip label="Production Countries" sx={styles.chipLabel} color="primary" />
                 </li>
-                {movie.production_countries.map((g) => (
-                    <li key={g.name}>
-                        <Chip label={g.name} />
+                {movie.production_countries.map((pc) => (
+                    <li key={pc.name}>
+                        <Chip label={pc.name} />
                     </li>
                 ))}
             </Paper>
